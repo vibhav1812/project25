@@ -14,14 +14,13 @@ World.add(world,this.body);
 display(){
     
     var pos = this.body.position;
-    push();
-    fill("purple");
-    ellipseMode(RADIUS);
-    ellipse(pos.x,pos.y,20);
-    imageMode(CENTER);
-    image(this.img,0,0,20,20);
-    pop();
-    
+        var angle = this.body.angle;
+        push ();
+        translate(pos.x,pos.y);
+        rotate (angle);
+        imageMode(CENTER);
+        image(this.img,0,0,58,58);
+        pop ();
 }
 
 }

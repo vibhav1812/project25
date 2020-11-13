@@ -20,11 +20,10 @@ function setup() {
 	//Create the Bodies Here.
 
 ground1 = new Ground(670);
-
 paper1 = new Paper(300,640);
-dustbin1 = new Dustbin(650,650,200,20);
-dustbin2 = new Dustbin(540,635,20,70);
-dustbin3 = new Dustbin(740,635,20,70);
+dustbin1 = new Dustbin(650,560);
+dustbin2 = new Dustbin1(570,555,20,187);
+dustbin3 = new Dustbin1(730,555,20,187);
 	Engine.run(engine);
   
 }
@@ -32,20 +31,22 @@ dustbin3 = new Dustbin(740,635,20,70);
 
 function draw() {
   rectMode(CENTER);
-  background(0);
-  
-  dustbin1.display();
-  dustbin2.display();
-  dustbin3.display(); 
+  background("aliceBlue");
   paper1.display();
   ground1.display();
+  dustbin2.display();
+  dustbin3.display(); 
+  dustbin1.display();
+  
+
+ 
   console.log(paper1)
   
 }
 
 function keyPressed(){
 	if(keyDown(UP_ARROW)){
-		Body.applyForce(paper1.body,paper1.body.position,{x:52,y:-52})
+		Body.applyForce(paper1.body,paper1.body.position,{x:30,y:-82})
 	}
 }
 
