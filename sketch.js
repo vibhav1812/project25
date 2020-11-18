@@ -22,8 +22,8 @@ function setup() {
 ground1 = new Ground(670);
 paper1 = new Paper(300,640);
 dustbin1 = new Dustbin(650,560);
-dustbin2 = new Dustbin1(570,555,20,187);
-dustbin3 = new Dustbin1(730,555,20,187);
+dustbin2 = new Dustbin(570,555,20,187);
+dustbin3 = new Dustbin(730,555,20,187);
 	Engine.run(engine);
   
 }
@@ -34,8 +34,8 @@ function draw() {
   background("aliceBlue");
   paper1.display();
   ground1.display();
-  dustbin2.display();
-  dustbin3.display(); 
+  dustbin2.noDisplay();
+  dustbin3.noDisplay(); 
   dustbin1.display();
   
 

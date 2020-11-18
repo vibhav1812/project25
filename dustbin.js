@@ -20,6 +20,17 @@ this.height = h;
         rotate (angle);
         imageMode(CENTER);
         image(this.img,0,0,200,200);
-        pop ();
+        pop ()
 }
+
+
+
+noDisplay(){
+    var pos = this.body.position
+            rectMode(CENTER)
+            rect(pos.x,pos.y,this.width,this.height);
+            fill("white"); 
+}
+ 
     }
+
